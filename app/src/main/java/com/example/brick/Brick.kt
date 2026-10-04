@@ -353,9 +353,9 @@ fun LockMap(anchor: Location, range: Float, me: Location?, modifier: Modifier = 
     val fitted = remember { booleanArrayOf(false) }
     remember {
         Configuration.getInstance().apply {
-            userAgentValue = c.packageName
-            osmdroidBasePath = File(c.filesDir, "osmdroid")
-            osmdroidTileCache = File(c.filesDir, "osmdroid/tiles")
+            userAgentValue = "BrickApp/1.0 (+https://github.com/ruthwik-pala/brick-app2)"
+            osmdroidBasePath = File(c.filesDir, "osm2")
+            osmdroidTileCache = File(c.filesDir, "osm2/tiles")
         }
         true
     }
